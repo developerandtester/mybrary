@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Barcode
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Barcode Scanner</ion-title>
     </ion-toolbar>
   </ion-header>
+  <!-- <ion-tab-button tab="scan" (click)="scan()">
+    <ion-icon ></ion-icon>
+    <ion-label>Scan</ion-label>
+  </ion-tab-button> -->
+  
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  
+  <div>
+    <zxing-scanner #scanner  start="true"  [formats]="allowedFormats" (scanSuccess)="onCodeResult($event)"></zxing-scanner>
+    <p>
+      Result:
+      <strong>{{ qrResultString }}</strong>      
+    </p>
+  </div>
 </ion-content>
