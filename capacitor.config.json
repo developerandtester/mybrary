@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Mybrary",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

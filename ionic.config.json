@@ -1,0 +1,8 @@
+{
+  "name": "Mybrary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "cb6136e1"
+}
