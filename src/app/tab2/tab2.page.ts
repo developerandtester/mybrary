@@ -26,9 +26,9 @@ export class Tab2Page {
   bookAuthor:any;
   bookLink:string;
   category:string;
-  i:any;
-
-
+  bookDescription:any;
+  pageCount:any;
+  previewLink:any;
   constructor( private http: HttpClient ) {}
 
 
@@ -40,11 +40,12 @@ export class Tab2Page {
       this.items=JSON.stringify(data["items"]);
       this.itemsArr=JSON.parse(this.items);
       this.bookName=JSON.stringify(this.itemsArr[0]["volumeInfo"]["title"]);
-      this.bookAuthor=JSON.stringify(this.itemsArr[0]["volumeInfo"]["authors"])    
-      console.log("2" +this.items)
-      console.log("3" +this.itemsArr)
-      console.log("4" +this.bookName);
-      console.log("5" +this.bookAuthor);      
+      this.bookAuthor=JSON.stringify(this.itemsArr[0]["volumeInfo"]["authors"]);
+      this.bookDescription=JSON.stringify(this.itemsArr[0]["volumeInfo"]["description"]);
+      this.pageCount=JSON.stringify(this.itemsArr[0]["volumeInfo"]["pageCount"]);
+      this.previewLink=JSON.stringify(this.itemsArr[0]["volumeInfo"]["previewLink"]);
+      
+
     })
   }
 
