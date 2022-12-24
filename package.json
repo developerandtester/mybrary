@@ -14,7 +14,7 @@
   "private": true,
   "dependencies": {
     "@angular/common": "^15.0.4",
-    "@angular/core": "^15.0.0",
+    "@angular/core": "^15.0.4",
     "@angular/forms": "^15.0.0",
     "@angular/http": "^7.2.16",
     "@angular/material": "^15.0.3",
@@ -77,7 +77,7 @@
   },
   "description": "An Ionic project",
   "cordova": {
-    "plugins": {      
+    "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
